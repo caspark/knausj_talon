@@ -213,9 +213,9 @@ simple_keys = [
 ]
 
 alternate_keys = {
-    "delete": "backspace",
-    "forward delete": "delete",
-    #'junk': 'backspace',
+    "rem": "backspace",
+    "junk": "delete",
+    "shock": "enter",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
@@ -225,7 +225,7 @@ keys = {k: k for k in simple_keys}
 keys.update(alternate_keys)
 ctx.lists["self.special_key"] = keys
 ctx.lists["self.function_key"] = {
-    f"F {default_f_digits[i]}": f"f{i + 1}" for i in range(12)
+    f"funk {default_f_digits[i]}": f"f{i + 1}" for i in range(12)
 }
 
 
@@ -234,4 +234,3 @@ class Actions:
     def get_alphabet() -> dict:
         """Provides the alphabet dictionary"""
         return alphabet
-

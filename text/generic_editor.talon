@@ -1,38 +1,38 @@
 find it:
-    edit.find()
+    edit.find('')
 
 next one:
     edit.find_next()
 
-go word left:
+fish:
     edit.word_left()
 
-go word right:
+fame:
     edit.word_right()
 
-go left:
+left:
     edit.left()
 
-go right:
+right:
     edit.right()
 
-go up:
+dup:
     edit.up()
 
-go down:
+down:
     edit.down()
 
-go line start:
+prome:
     edit.line_start()
 
-go line end:
+prend:
     edit.line_end()
 
-go way left:
+go way prome:
     edit.line_start()
     edit.line_start()
 
-go way right:
+go way prend:
     edit.line_end()
 
 go way down:
@@ -41,10 +41,10 @@ go way down:
 go way up:
     edit.file_start()
 
-go page down:
+wag:
     edit.page_down()
 
-go page up:
+crimp:
     edit.page_up()
 
 # selecting
@@ -69,10 +69,10 @@ select down:
 select word:
     edit.select_word()
 
-select word left:
+shift fish:
     edit.extend_word_left()
 
-select word right:
+shift fame:
     edit.extend_word_right()
 
 select way left:
@@ -112,22 +112,22 @@ clear down:
     edit.extend_line_down()
     edit.delete()
 
-clear word:
+scratch:
     edit.delete_word()
 
-clear word left:
+scratch left:
     edit.extend_word_left()
     edit.delete()
 
-clear word right:
+kite right:
     edit.extend_word_right()
     edit.delete()
 
-clear way left:
+snipple:
     edit.extend_line_start()
     edit.delete()
 
-clear way right:
+snipper:
     edit.extend_line_end()
     edit.delete()
 
