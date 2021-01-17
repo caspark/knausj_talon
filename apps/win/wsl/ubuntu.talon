@@ -1,6 +1,5 @@
 app: ubuntu
 app: windows_terminal
-and win.title: /Ubuntu/
 -
 tag(): user.file_manager
 tag(): user.generic_terminal
@@ -13,4 +12,4 @@ action(user.file_manager_open_parent):
     insert("cd ..")
     key(enter)
 
-^go <user.letter>$: user.file_manager_open_volume("/mnt/{letter}")
+^jump <user.letter>$: user.file_manager_open_volume("/mnt/{letter}")
